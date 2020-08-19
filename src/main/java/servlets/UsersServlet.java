@@ -11,7 +11,7 @@ import java.io.IOException;
 
 
 public class UsersServlet extends HttpServlet {
-    @SuppressWarnings({"FieldCanBeLocal", "UnusedDeclaration"}) //todo: remove after module 2 home work
+    @SuppressWarnings({"FieldCanBeLocal", "UnusedDeclaration"}) 
     private final AccountService accountService;
 
     public UsersServlet(AccountService accountService) {
@@ -21,13 +21,13 @@ public class UsersServlet extends HttpServlet {
     //get public user profile
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws ServletException, IOException {
-        //todo: module 2 home work
+        
     }
 
     //sign up
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws ServletException, IOException {
-        //todo: module 2 home work
+        
         String login = request.getParameter("login");
         String pass = request.getParameter("password");
         if (login == null || pass == null) {
@@ -46,12 +46,12 @@ public class UsersServlet extends HttpServlet {
     //change profile
     public void doPut(HttpServletRequest request,
                       HttpServletResponse response) throws ServletException, IOException {
-        //todo: module 2 home work
+        
     }
 
     //unregister
     public void doDelete(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
-        //todo: module 2 home work
+        
     }
 }
